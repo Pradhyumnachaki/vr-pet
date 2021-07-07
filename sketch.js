@@ -25,8 +25,8 @@ function setup() {
   dog.addImage(dogimg1)
   dog.scale=0.2
  
-  var dog = database.ref('Food');
-  dog.on("value", readPosition, showError);
+  var dogo = database.ref('Food');
+  dogo.on("value", readPosition, showError);
   feed = createButton("FEED DRAGO")
   feed.position(500,15)
   feed.mousePressed(FeedDog)
